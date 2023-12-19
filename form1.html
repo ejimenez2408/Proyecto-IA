@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+	<script type="text/javascript" src="verificar.js"></script>
+	<title>Probabilidad Hepatitis C</title>
+	<center>
+	<h1>Formulario Hepatitis C</h1>
+	<h2>Formulario Para Determinar Si Una Persona Tiene O No Hepatitis C</h2>
+</head>
+<body>
+	<form>
+		<div class="input-container">
+			<div>
+				<label for="nombre">Nombre</label>
+			<br>
+				<input type="text" id="nombre" name="nombre" required>
+			</div>
+			<div>
+				<label for="edad">Edad</label>
+			<br>
+				<input type="number" id="edad" name="edad" required>
+			</div>
+			<div>
+				<label for="sexo">Sexo</label>
+			<br>
+					<select id="sexo" name="sexo" required>
+					<option value="">Seleccionar</option>
+					<option value="masculino">Masculino</option>
+					<option value="femenino">Femenino</option>
+					<option value="otro">Otro</option>
+				</select>
+			</div>
+			<div>
+				<label for="albúmina">Albúmina en sangre</label>
+			<br>
+				<input type="number" step="any" id="albúmina" name="albúmina" required>
+			</div>
+		</div>
+		<div>
+			<label for="fosfatasa">Fosfatasa alcalina en sangre</label>
+		<br>
+			<input type="number" step="any" id="fosfatasa" name="fosfatasa" required>
+		</div>
+		<div>
+            <label for="alanina">Alanina Aminotransferasa en sangre</label>
+		<br>
+			<input type="number" step="any" id="alanina" name="alanina" required>
+        </div>
+		<div>
+			<label for="aspartato">Aspartato Aminotransferasa en sangre</label>
+		<br>
+			<input type="number" step="any" id="aspartato" name="aspartato" required>
+		</div>
+		<div>
+			<label for="bilirrubina">Bilirrubina en sangre</label>
+		<br>
+			<input type="number" step="any" id="bilirrubina" name="bilirrubina" required>
+		</div>
+		<div>
+			<label for="colinesterasa">Colinesterasa en sangre</label>
+		<br>
+			<input type="number" step="any" id="colinesterasa" name="colinesterasa" required>
+		</div>
+		<div>
+			<label for="creatinina">Creatinina en sangre</label>
+		<br>
+			<input type="number" step="any" id="creatinina" name="creatinina" required>
+		</div>
+		<div>
+			<label for="gamma">Gamma-Glutamil Transferasa en sangre</label>
+		<br>
+			<input type="number" step="any" id="gamma" name="gamma" required>
+		</div>
+		<div>
+			<label for="proteina">Proteína total en sangre</label>
+		<br>
+			<input type="number" step="any" id="proteina" name="proteina" required>
+		</div>
+			<input type="button" name="calcular" id="calcular" value="Calcular" onclick="validar()">
+		<table id="tb" border="1" style="border: 1px solid black;">
+			<tr><th>Nombre</th>
+				<th>Edad</th>
+				<th>Sexo</th>
+				<th>Albúmina en sangre</th>
+				<th>Fosfatasa alcalina en sangre</th>
+				<th>Alanina Aminotransferasa en sangre</th>
+				<th>Aspartato Aminotransferasa en sangre</th>
+				<th>Bilirrubina en sangre</th>
+				<th>Colinesterasa en sangre</th>
+				<th>Creatinina en sangre</th>
+				<th>Gamma-Glutamil Transferasa en sangre</th>
+				<th>Proteína total en sangre</th>
+				<th>Resultado</th>
+			</tr>
+		</table>
+	</form>
+</body>
+</center>
+</html>
